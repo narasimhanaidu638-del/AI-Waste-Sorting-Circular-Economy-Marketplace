@@ -1,1 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>EcoSort AI | Smart Waste Sorting</title>
+
+    <meta name="description"
+          content="AI-powered waste sorting and circular economy marketplace.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ♻️ EcoSort <span>AI</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#marketplace">Marketplace</a>
+        </nav>
+
+        <button class="login-btn" onclick="showLoginMessage()">
+            Login
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                🌱 AI-Powered Circular Economy
+            </div>
+
+            <h1>
+                Sort Waste <span>Smarter.</span>
+                <br>
+                Keep Materials Moving.
+            </h1>
+
+            <p>
+                Use artificial intelligence to identify waste,
+                improve segregation, connect recyclers and
+                create a cleaner circular economy.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn"
+                        onclick="openScanner()">
+                    🔍 Scan Waste
+                </button>
+
+                <button class="secondary-btn"
+                        onclick="scrollToSection('marketplace')">
+                    ♻️ Explore Marketplace
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="scan-icon">
+                ♻️
+            </div>
+
+            <h3>AI Waste Scanner</h3>
+
+            <p>
+                Upload a waste image and our AI
+                will identify the material.
+            </p>
+
+            <div class="scan-result">
+
+                <div>
+                    <strong>Plastic Bottle</strong>
+                    <small>Detected material</small>
+                </div>
+
+                <div class="confidence">
+                    94%
+                </div>
+
+            </div>
+
+            <button class="scan-btn"
+                    onclick="openScanner()">
+                Upload Waste Image
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section id="features" class="section">
+
+        <div class="section-title">
+
+            <span>OUR FEATURES</span>
+
+            <h2>
+                One Platform for
+                <strong>Smarter Recycling</strong>
+            </h2>
+
+            <p>
+                Technology that connects waste generators,
+                recyclers and collection centers.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🤖</div>
+
+                <h3>AI Waste Detection</h3>
+
+                <p>
+                    Identify plastic, paper, glass, metal,
+                    organic waste and other materials using AI.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🛒</div>
+
+                <h3>Recycling Marketplace</h3>
+
+                <p>
+                    Connect people and recycling businesses
+                    to exchange sorted recyclable materials.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🏆</div>
+
+                <h3>Eco Rewards</h3>
+
+                <p>
+                    Earn reward points by properly sorting
+                    and recycling waste.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📍</div>
+
+                <h3>Collection Centers</h3>
+
+                <p>
+                    Find recycling and waste collection
+                    centers near your location.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section id="how-it-works" class="how-section">
+
+        <div class="section-title">
+
+            <span>HOW IT WORKS</span>
+
+            <h2>
+                From Waste to
+                <strong>Resource</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">01</div>
+
+                <h3>Upload</h3>
+
+                <p>
+                    Upload a photo of your waste.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">02</div>
+
+                <h3>Detect</h3>
+
+                <p>
+                    AI identifies the waste category.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">03</div>
+
+                <h3>List</h3>
+
+                <p>
+                    Add recyclable materials to the marketplace.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">04</div>
+
+                <h3>Recycle</h3>
+
+                <p>
+                    Connect with recyclers and earn rewards.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MARKETPLACE ================= -->
+
+    <section id="marketplace" class="section marketplace">
+
+        <div class="section-title">
+
+            <span>CIRCULAR MARKETPLACE</span>
+
+            <h2>
+                Give Waste a
+                <strong>Second Life</strong>
+            </h2>
+
+            <p>
+                Recyclable materials can become valuable resources.
+            </p>
+
+        </div>
+
+
+        <div class="market-grid">
+
+            <div class="market-card">
+
+                <div class="material">♻️</div>
+
+                <h3>Plastic</h3>
+
+                <p>Sorted plastic materials</p>
+
+                <strong>Available for recycling</strong>
+
+            </div>
+
+
+            <div class="market-card">
+
+                <div class="material">📦</div>
+
+                <h3>Paper</h3>
+
+                <p>Cardboard and paper waste</p>
+
+                <strong>Available for recycling</strong>
+
+            </div>
+
+
+            <div class="market-card">
+
+                <div class="material">🔩</div>
+
+                <h3>Metal</h3>
+
+                <p>Metal recyclable materials</p>
+
+                <strong>Available for recycling</strong>
+
+            </div>
+
+
+            <div class="market-card">
+
+                <div class="material">🍾</div>
+
+                <h3>Glass</h3>
+
+                <p>Glass bottles and containers</p>
+
+                <strong>Available for recycling</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <h2>
+            Ready to Make Waste
+            <br>
+            <span>Worth More?</span>
+        </h2>
+
+        <p>
+            Start sorting smarter and help build a circular economy.
+        </p>
+
+        <button class="primary-btn"
+                onclick="openScanner()">
+            Start Recycling ♻️
+        </button>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ♻️ EcoSort AI
+        </div>
+
+        <p>
+            AI Waste Sorting & Circular Economy Marketplace
+        </p>
+
+        <p class="copyright">
+            © 2026 EcoSort AI. Hackathon Project.
+        </p>
+
+    </footer>
+
+
+    <!-- Scanner Modal -->
+
+    <div id="scannerModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close"
+                    onclick="closeScanner()">
+                ×
+            </button>
+
+            <div class="modal-icon">
+                🤖
+            </div>
+
+            <h2>AI Waste Scanner</h2>
+
+            <p>
+                Upload a waste image to start AI classification.
+            </p>
+
+            <input
+                type="file"
+                id="wasteImage"
+                accept="image/*"
+                onchange="previewWaste(event)"
+            >
+
+            <div id="preview"></div>
+
+            <button class="primary-btn"
+                    onclick="analyzeWaste()">
+                Analyze Waste
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
